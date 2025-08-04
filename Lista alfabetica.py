@@ -24,11 +24,12 @@ def main():
     nombres = []
     print("\n Ingrese los nombres que desea registrar: ")
     for i in range(cantidad):
-        nombre = input(f"Nombre {i + 1}: ")
+        nombre = input(f"Nombre {i+1}: ")
     nombres.append(nombre)
     nombres_ordenados = quick_sort(nombres)
     print("\n---Lista De Nombres Ordenados---")
-    print(nombres)
+    for nombre in nombres_ordenados:
+        print(nombre)
 
 if __name__ == '__main__':
     main()
